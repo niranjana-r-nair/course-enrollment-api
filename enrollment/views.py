@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
 from enrollment.models import Enrollment
 from enrollment.serializers import EnrollmentSerializer
 from enrollment.permissions import IsStudent
