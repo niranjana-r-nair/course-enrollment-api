@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles','rest_framework','accounts','courses','enrollment','rest_framework.authtoken'
+    'django.contrib.staticfiles','rest_framework','accounts','courses','enrollment','rest_framework.authtoken',
+    'razorpay'
 ]
 
 MIDDLEWARE = [

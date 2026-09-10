@@ -20,7 +20,7 @@ from rest_framework.routers import DefaultRouter
 from accounts.views import RegisterViewSet,LogoutAPIView
 from rest_framework.authtoken.views import obtain_auth_token
 from courses.views import CourseViewSet
-from enrollment.views import EnrollmentViewSet
+from enrollment.views import EnrollmentViewSet,Verifypayment
 router=DefaultRouter()
 router.register('register',RegisterViewSet)
 router.register('courses',CourseViewSet)
@@ -32,5 +32,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('login/', obtain_auth_token),
 path('logout/',LogoutAPIView.as_view()),
+    path('verify/',Verifypayment.as_view()),
 
 ]

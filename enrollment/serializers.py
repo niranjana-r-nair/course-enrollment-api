@@ -7,4 +7,4 @@ class EnrollmentSerializer(serializers.ModelSerializer):
     class Meta:
         model=Enrollment
         fields='__all__'
-        read_only_fields=['student','enrollment_date']
+        read_only_fields=['student','enrollment_date','amount','order_id','status']
